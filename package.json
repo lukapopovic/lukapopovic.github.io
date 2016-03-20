@@ -1,0 +1,30 @@
+{
+  "name": "lukapopovic.github.io",
+  "version": "1.0.0",
+  "description": "My personal portfolio",
+  "main": "index.js",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.3",
+    "http-server": "^0.9.0"
+  },
+  "scripts": {
+    "serve": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukapopovic/lukapopovic.github.io.git"
+  },
+  "keywords": [
+    "Luka",
+    "Popovic",
+    "Portfolio"
+  ],
+  "author": "Luka Popovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukapopovic/lukapopovic.github.io/issues"
+  },
+  "homepage": "https://github.com/lukapopovic/lukapopovic.github.io#readme"
+}

@@ -171,13 +171,13 @@ footer span:hover {
 
 /* Resposive related stuff */
 @media screen and (max-width: 800px) {
-   /* html, body {
-        height: 100%;
-    }*/
-
     header {
         width: auto;
         text-align: center;
+    }
+
+    .content {
+        width: 100%;
     }
 
     .first-part {
@@ -194,7 +194,6 @@ footer span:hover {
     .first-part .about-me {
         margin: 0 auto;
         padding: 50px 20px;
-        width: 300px;
         text-align: justify;
     }
 

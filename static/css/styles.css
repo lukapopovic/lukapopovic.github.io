@@ -1,8 +1,8 @@
+/* General */
 html, body {
     margin: 0;
-    min-height: 100%; 
     height: 100%;
-    overflow-y: hidden;
+    overflow-y: auto;
     overflow-x: hidden; 
     background-color: #4e5252;
     box-sizing: border-box;
@@ -10,6 +10,7 @@ html, body {
     font-family: monospace;
 }
 
+/* Header */
 header {
     width: 100%;
     background-color: #e67e00; 
@@ -27,9 +28,12 @@ header h1 {
     text-shadow: 0px 1px #000000;
 }
 
+
+/* Content */
 .content-container {
     width: 100%;
     margin: 0 0 0 0;
+    min-height: calc(100% - 152px);
 }
 
 .content {
@@ -42,11 +46,12 @@ header h1 {
 }
 
 .content hr {
-    width: 70%;
+    width: 90%;
     opacity: .5;
 }
 
-.content .first-part {
+/* First part of content */
+.first-part {
     height: auto;
     width: 100%;
     display: flex;
@@ -54,13 +59,13 @@ header h1 {
     flex-wrap: nowrap;
 }
 
-.content .first-part .pic {
+.first-part .pic {
     width: 300px;
     height: 300px;
-    padding: 50px 20px;
+    padding: 50px 40px 50px 0;
 }
 
-.content .first-part .pic img {
+.first-part .pic img {
     position: relative;
     height: 100%;
     width: auto;
@@ -70,14 +75,14 @@ header h1 {
     box-shadow: -1px 0px 15px 5px rgba(41,40,38,1);
 }
 
-.content .first-part .about-me {
+.first-part .about-me {
     display: table;
     table-layout: fixed;
     min-width: 300px;
-    width: calc(100% - 300px);
+    width: calc(100% - 380px);
     height: 300px;
     text-align: left;
-    padding: 50px 20px;
+    padding: 50px 0 50px 40px;
 }
 
 .about-me .text {
@@ -87,13 +92,15 @@ header h1 {
     opacity: .5;
 }
 
-.content .second-part {
+
+/* Second part of content */
+.second-part {
     padding-top: 50px;
     height: auto;
     width: 100%;
 }
 
-.content .second-part .links {
+.second-part .links {
     height: auto;
     text-align: center;
 }
@@ -141,23 +148,8 @@ header h1 {
     text-decoration: none;
 }
 
-/*.links a:hover {
-    font-weight: 500;
-    color: #ffffff;
-    text-decoration: none;
-}*/
-
-/*.links a img {
-    opacity: .5;
-}
-
-.links a img:hover {
-    opacity: 1;
-}
-*/
+/* Footer */
 footer {
-    position: absolute;
-    bottom: 0;
     padding: 7px;
     width: 100%;
     height: 14px;
@@ -177,26 +169,37 @@ footer span:hover {
     opacity: 1;
 }
 
+/* Resposive related stuff */
 @media screen and (max-width: 800px) {
-    html, body {
+   /* html, body {
         height: 100%;
-        overflow-y: auto;
+    }*/
+
+    header {
+        width: auto;
+        text-align: center;
     }
 
-    .content .first-part {
+    .first-part {
         display: block;
         height: auto;
         flex-wrap: wrap;
     }
 
-    .content .first-part .pic {
+    .first-part .pic {
         margin: 0 auto;
+        padding: 50px 20px;
     }
 
-    .content .first-part .about-me {
+    .first-part .about-me {
         margin: 0 auto;
+        padding: 50px 20px;
         width: 300px;
         text-align: justify;
+    }
+
+    .about-me .text {
+        vertical-align: top;
     }
 
     footer {
